@@ -572,10 +572,10 @@ function ncc (
       // dedupe any existing __nccwpck_require__ first
       if (code.indexOf('__nccwpck_require2_') !== -1) {
         // nth level nesting (we support 9 levels apparently)
-        for (let i = 9; i > 1; i--) {
+        for (let i = 20; i > 1; i--) {
           if (code.indexOf(`__nccwpck_require${i}_`) === -1)
             continue;
-          if (i === 9)
+          if (i === 20)
             throw new Error('9 levels of ncc build nesting reached, please post an issue to support this level of ncc build composition.');
           code = code.replace(new RegExp(`__nccwpck_require${i}_`, 'g'), `__nccwpck_require${i + 1}_`);
         }
