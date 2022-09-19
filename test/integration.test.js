@@ -9,8 +9,6 @@ jest.setTimeout(200000);
 const skipOnWindows = [
   'binary-require.js',
   'browserify-middleware.js',
-  'oracledb.js',
-  'tensorflow.js',
 ]
 
 let nccRun;
