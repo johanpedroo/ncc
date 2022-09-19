@@ -25,7 +25,7 @@ together with all its dependencies, gcc-style.
 
 ### Installation
 ```bash
-npm i -g @vercel/ncc
+npm i -g lambda-builder-ncc
 ```
 
 ### Usage
@@ -109,7 +109,7 @@ See [package-support.md](package-support.md) for some common packages and their 
 ### Programmatically From Node.js
 
 ```js
-require('@vercel/ncc')('/path/to/input', {
+require('lambda-builder-ncc')('/path/to/input', {
   // provide a custom cache path or disable caching
   cache: "./custom/cache/path" | false,
   // externals to leave as requires of the build
